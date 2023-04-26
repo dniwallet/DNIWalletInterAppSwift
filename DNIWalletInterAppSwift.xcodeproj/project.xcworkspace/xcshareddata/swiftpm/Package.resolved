@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "iac_dniwallet_swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dniwallet/IAC_DNIWallet_Swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f1c827ce0731a71549ac21169433c8568947ac6b"
+      }
+    },
+    {
+      "identity" : "joseswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airsidemobile/JOSESwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f308de16698a18d74d93779bca4d702ba9186d7a"
+      }
+    }
+  ],
+  "version" : 2
+}
