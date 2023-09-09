@@ -65,10 +65,17 @@ Ejemplo de App iOS en Swift que interacciona con la App DNI Wallet o DNI Wallet+
 
     var url = dniwalletURL
     if let orgID = orgIDTextField.text, orgID.count == 9,
-    let procID = procIDTextField.text, procID.count == 9 {
+       var procID = procIDTextField.text, procID.count == 9 {
         UserDefaults.standard.set(orgID, forKey: "orgid_preference")
         UserDefaults.standard.set(procID, forKey: "procid_preference")
-        url = URL(string: "dniwallet://p/\(epoch):\(orgID):\(procID)")!
+        if let extID = extIDTextField.text, extID.count <= 119 {
+            procID = "\(procID)-\(extID)")!
+        }
+        var sDNI = ""
+        if let dni = dniTextField.text, dni.count == 9 {
+            sDNI = ":\(dni)"
+        }
+        url = URL(string: "dniwallet://p/\(epoch):\(orgID):\(procID)\(sDNI)")!
     }
 
     let options = [UIApplication.OpenExternalURLOptionsKey.universalLinksOnly: false,
@@ -87,12 +94,15 @@ Ejemplo de App iOS en Swift que interacciona con la App DNI Wallet o DNI Wallet+
         * **epoch** es el numero de segundos desde 1970 (Unix epoch) y se utiliza para indicar cuando se lanza el proyecto
         * **orgID** es el identificador de organización
         * **procID** es el identificador de proceso
+        * **extID** es un identificador externo opcional (para que una organización pase un identificador al proceso) A continuacion del procID separado con un guión.
+                    En el ejemplo es ABCDEFGHIJK
+        * **dni** es un numero de DNI para seleccion automática cuando hay mas de un DNI en un Wallet. En el ejemplo 99999999R que es el DNI de Carmen Española
         * **params** parametros opcionales que desea pasar a su callback. En la forma param1=value1&param2=value2....
 * Ejemplos:
-    * **dniwallet://p/1682208115283:000000001:000002000**
+    * **dniwallet://p/1682208115283:000000001:000002000-ABCDEFGHIJK:99999999R**
 * Para lanzar ese ejemplo de DeepLink desde su aplicación:
 ```swift
-UIApplication.shared.open(URL(string:"dniwallet://p/1682208115283:000000001:000002000")!, completionHandler: { ok in
+UIApplication.shared.open(URL(string:"dniwallet://p/1682208115283:000000001:000002000-ABCDEFGHIJK:99999999R")!, completionHandler: { ok in
     print(ok)
 })
 ```                
@@ -105,12 +115,15 @@ UIApplication.shared.open(URL(string:"dniwallet://p/1682208115283:000000001:0000
         * **epoch** es el numero de segundos desde 1970 (Unix epoch) y se utiliza para indicar cuando se lanza el proyecto
         * **orgID** es el identificador de organización
         * **procID** es el identificador de proceso
+        * **extID** es un identificador externo opcional (para que una organización pase un identificador al proceso). A continuacion del procID separado con un guión.
+                    En el ejemplo es ABCDEFGHIJK
+        * **dni** es un numero de DNI para seleccion automática cuando hay mas de un DNI en un Wallet. En el ejemplo 99999999R que es el DNI de Carmen Española
         * **params** parametros opcionales que desea pasar a su callback. En la forma param1=value1&param2=value2....
 * Ejemplo de UniversalLink:
-    * **https://dniwallet.com/p/1682208115283:000000001:000002000?codigo=3254&user=67976987**
+    * **https://dniwallet.com/p/1682208115283:000000001:000002000-ABCDEFGHIJK:99999999R?codigo=3254&user=67976987**
 * Para lanzar ese ejemplo de UniversalLink desde su aplicación:
 ```swift
-UIApplication.shared.open(URL(string:"https://dniwallet.com/p/1682208115283:000000001:000002000?codigo=3254&user=67976987")!, completionHandler: { ok in
+UIApplication.shared.open(URL(string:"https://dniwallet.com/p/1682208115283:000000001:000002000-ABCDEFGHIJK:99999999R?codigo=3254&user=67976987")!, completionHandler: { ok in
     print(ok)
 })
 ```                

@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IACManager.shared.callbackURLScheme = "dniwalletInterApp"
+        // UIApplication.shared.open(URL(string:"https://dniwallet.com/p/\(epoch):234093164:135442950?micode=3871&miuser=569")!, completionHandler: { ok in
+        //     print(ok)
+        // })
         return true
     }
 
