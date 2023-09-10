@@ -6,7 +6,7 @@
       "location" : "https://github.com/dniwallet/IAC_DNIWallet_Swift.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f1c827ce0731a71549ac21169433c8568947ac6b"
+        "revision" : "db0f3d62aaf57425c08098db9dfc1117394ef20f"
       }
     },
     {
@@ -15,7 +15,7 @@
       "location" : "https://github.com/airsidemobile/JOSESwift.git",
       "state" : {
         "branch" : "master",
-        "revision" : "f308de16698a18d74d93779bca4d702ba9186d7a"
+        "revision" : "a1cd4c990da61c86e5bb4cd7605e2d372cc10c72"
       }
     }
   ],
