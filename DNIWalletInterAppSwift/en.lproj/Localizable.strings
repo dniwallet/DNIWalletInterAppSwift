@@ -1,0 +1,32 @@
+/*
+  Localizable.strings
+  DNIWalletInterAppSwift
+  Created by DNI Wallet on 13/9/23.
+  Copyright © DNIWallet,S.L. All rights reserved.
+*/
+
+// IAC_DNIWallet_Swift
+// "OK" = "OK";
+// "Cancel" = "Cancel";
+// "Install" = "Install";
+
+// CheckInternetVC
+// "There is an internet connection" = "There is an internet connection";
+// "The iPhone is connected to the Internet" = "The iPhone is connected to the Internet";
+// "There is no internet connection" = "There is no internet connection";
+// "The iPhone is not connected to the Internet" = "The iPhone is not connected to the Internet";
+
+// CheckDNIWalletVC
+// "Error in text field" = "Error in text field";
+// "Failed to paste text. An external ID has a maximum of 119 characters." = "Failed to paste text. An external ID has a maximum of 119 characters.";
+// "Failed to paste text. An DNI number has a maximum of 9 characters." = "Failed to paste text. An DNI number has a maximum of 9 characters.";
+// "Error in identifier" = "Error in identifier";
+// "This field only accepts a 9-digit number" = "This field only accepts a 9-digit number";
+// "Failed to paste text. Only 9 characters are allowed." = "Failed to paste text. Only 9 characters are allowed.";
+// "DNI Wallet+ is installed" = "DNI Wallet+ is installed";
+// "DNI Wallet+ is installed on this iPhone." = "DNI Wallet+ is installed on this iPhone.";
+// "DNI Wallet is installed" = "DNI Wallet is installed";
+// "DNI Wallet is installed on this iPhone." = "DNI Wallet is installed on this iPhone.";
+// "DNI Wallet is not installed." = "DNI Wallet is not installed.";
+// "This iPhone does not have DNI Wallet or DNI Wallet+ installed." = "This iPhone does not have DNI Wallet or DNI Wallet+ installed.";
+// "Done" = "Done";

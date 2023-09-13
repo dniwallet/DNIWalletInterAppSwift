@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  DNIWalletInterAppSwift
+  Created by DNI Wallet on 13/9/23.
+  Copyright © DNIWallet,S.L. All rights reserved.
+*/
+
+// IAC_DNIWallet_Swift
+"OK" = "Aceptar";
+"Cancel" = "Cancelar";
+"Install" = "Instalar";
+
+// CheckInternetVC
+"There is an internet connection" = "Hay conexión a Internet";
+"The iPhone is connected to the Internet" = "El iPhone está conectado a Internet";
+"There is no internet connection" = "No hay conexión a Internet";
+"The iPhone is not connected to the Internet" = "El iPhone no está conectado a Internet";
+
+// CheckDNIWalletVC
+"Error in text field" = "Error en campo de texto";
+"Failed to paste text. An external ID has a maximum of 119 characters." = "Ha fallado pegar texto. Un ID externo tiene un máximo de 119 caracteres";
+"Failed to paste text. An DNI number has a maximum of 9 characters." = "Ha fallado pegar texto. Un número de DNI tiene un máximo de 9 caracteres";
+"Error in identifier" = "Error en identificador";
+"This field only accepts a 9-digit number" = "Este campo sólo admite un número de 9 digitos";
+"Failed to paste text. Only 9 characters are allowed." = "Ha fallado pegar texto. Sólo pueden ser 9 caracteres";
+"DNI Wallet+ is installed" = "DNI Wallet+ está instalado";
+"DNI Wallet+ is installed on this iPhone." = "DNI Wallet+ está instalado en este iPhone";
+"DNI Wallet is installed" = "DNI Wallet está instalado";
+"DNI Wallet is installed on this iPhone." = "DNI Wallet está instalado en este iPhone";
+"DNI Wallet is not installed." = "DNI Wallet no está instalado";
+"This iPhone does not have DNI Wallet or DNI Wallet+ installed." = "Este iPhone no tiene instalado DNI Wallet ni DNI Wallet+";
+"Done" = "Aceptar";

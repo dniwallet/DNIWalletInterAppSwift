@@ -14,10 +14,10 @@ class CheckInternetVC: UIViewController {
     /// Accion cuando se pulsa el botón checkInternet
     @IBAction func checkInternetButton(_ sender: UIButton) {
         if CheckInternet.Connection() {
-            Alert(Title: "Hay conexión", Message: "El iPhone está conectado a Internet")
+            Alert(Title: "There is an internet connection", Message: "The iPhone is connected to the Internet")
         }
         else{
-            Alert(Title: "No hay conexión", Message: "El iPhone no está conectado a Internet")
+            Alert(Title: "There is no internet connection", Message: "The iPhone is not connected to the Internet")
         }
     }
     

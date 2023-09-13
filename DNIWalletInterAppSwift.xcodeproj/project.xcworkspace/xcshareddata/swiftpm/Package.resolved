@@ -6,7 +6,11 @@
       "location" : "https://github.com/dniwallet/IAC_DNIWallet_Swift.git",
       "state" : {
         "branch" : "master",
+<<<<<<< HEAD
+        "revision" : "8e03222d0aa362e2a81a2eb576059408506e0d9e"
+=======
         "revision" : "db0f3d62aaf57425c08098db9dfc1117394ef20f"
+>>>>>>> 4f58d4c58e3c8ce702c9dacab7b7e1463746a0c4
       }
     },
     {

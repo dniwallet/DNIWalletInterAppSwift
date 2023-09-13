@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Proceso"; ObjectID = "0Ks-kc-JT2"; */
+"0Ks-kc-JT2.text" = "Proceso";
+
+/* Class = "UILabel"; text = "Verificar acceso a Internet"; ObjectID = "0Ux-BO-G9c"; */
+"0Ux-BO-G9c.text" = "Verificar acceso a Internet";
+
+/* Class = "UILabel"; text = "Organización"; ObjectID = "2cG-RM-7LS"; */
+"2cG-RM-7LS.text" = "Organización";
+
+/* Class = "UITableViewSection"; headerTitle = "Acciones"; ObjectID = "6u1-yw-aVX"; */
+"6u1-yw-aVX.headerTitle" = "Acciones";
+
+/* Class = "UILabel"; text = "DNI (opcional)"; ObjectID = "7k2-C3-Qwi"; */
+"7k2-C3-Qwi.text" = "DNI (opcional)";
+
+/* Class = "UILabel"; text = "Identificador externo (opcional)"; ObjectID = "G1R-lU-gSy"; */
+"G1R-lU-gSy.text" = "Identificador externo (opcional)";
+
+/* Class = "UILabel"; text = "¿Está instalado DNI Wallet?"; ObjectID = "GTz-FX-YMU"; */
+"GTz-FX-YMU.text" = "¿Está instalado DNI Wallet?";
+
+/* Class = "UITextField"; placeholder = "ID (9 dígitos)"; ObjectID = "HET-pL-Ezb"; */
+"HET-pL-Ezb.placeholder" = "ID (9 dígitos)";
+
+/* Class = "UILabel"; text = "¿Está instalado DNI Wallet?"; ObjectID = "JGr-UE-c5R"; */
+"JGr-UE-c5R.text" = "¿Está instalado DNI Wallet?";
+
+/* Class = "UITextField"; placeholder = "ID Externo (max 119 chars)"; ObjectID = "LMe-pr-BSq"; */
+"LMe-pr-BSq.placeholder" = "ID Externo (max 119 chars)";
+
+/* Class = "UINavigationItem"; title = "DNI Wallet Inter App"; ObjectID = "P6D-f0-kdo"; */
+"P6D-f0-kdo.title" = "DNI Wallet Inter App";
+
+/* Class = "UIViewController"; title = "Instalado DNI Wallet"; ObjectID = "Xq1-Hh-Ug5"; */
+"Xq1-Hh-Ug5.title" = "Instalado DNI Wallet";
+
+/* Class = "UIButton"; normalTitle = "Lanzar DNI Wallet"; ObjectID = "aWc-px-bhN"; */
+"aWc-px-bhN.normalTitle" = "Lanzar DNI Wallet";
+
+/* Class = "UIButton"; normalTitle = "Verificar si está instalado DNI Wallet"; ObjectID = "aef-0g-fB4"; */
+"aef-0g-fB4.normalTitle" = "Verificar si está instalado DNI Wallet";
+
+/* Class = "UINavigationController"; title = "DNI Wallet Inter App"; ObjectID = "ckN-eX-2WK"; */
+"ckN-eX-2WK.title" = "DNI Wallet Inter App";
+
+/* Class = "UIButton"; normalTitle = "Verificar acceso a Internet"; ObjectID = "czD-Ll-hk9"; */
+"czD-Ll-hk9.normalTitle" = "Verificar acceso a Internet";
+
+/* Class = "UILabel"; text = "Verificar acceso a Internet"; ObjectID = "dom-K3-HEL"; */
+"dom-K3-HEL.text" = "Verificar acceso a Internet";
+
+/* Class = "UILabel"; text = "Antes de lanzar DNI Wallet compruebe que la App DNI Wallet está instalada. Este es un ejemplo de cómo verificar si DNI Wallet está instalado y si está instalado lanzar un proceso."; ObjectID = "gAl-iS-xO6"; */
+"gAl-iS-xO6.text" = "Antes de lanzar DNI Wallet compruebe que la App DNI Wallet está instalada. Este es un ejemplo de cómo verificar si DNI Wallet está instalado y si está instalado lanzar un proceso.";
+
+/* Class = "UITextField"; placeholder = "DNI (9 chars)"; ObjectID = "pVD-yR-kSI"; */
+"pVD-yR-kSI.placeholder" = "DNI (9 chars)";
+
+/* Class = "UILabel"; text = "DNI Wallet necesita conexión a Internet para ejecutar un proceso. Este es un ejemplo de como verificar que hay acceso a Internet"; ObjectID = "qNl-f5-T2X"; */
+"qNl-f5-T2X.text" = "DNI Wallet necesita conexión a Internet para ejecutar un proceso. Este es un ejemplo de como verificar que hay acceso a Internet";
+
+/* Class = "UITextField"; placeholder = "ID (9 dígitos)"; ObjectID = "wL6-8n-6TA"; */
+"wL6-8n-6TA.placeholder" = "ID (9 dígitos)";
+
+/* Class = "UIViewController"; title = "Verificar Internet"; ObjectID = "xqJ-AA-phE"; */
+"xqJ-AA-phE.title" = "Verificar Internet";

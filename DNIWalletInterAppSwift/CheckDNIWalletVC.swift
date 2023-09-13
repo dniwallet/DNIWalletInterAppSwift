@@ -70,7 +70,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
                     // easy: pasted data has a length greater than 1; who copy/pastes one character?
                     if string.count > 1 {
                         // Pasting text, present alert so the user knows what went wrong
-                        Alert(Title: "Error en campo de texto", Message: "Ha fallado pegar texto. Un ID externo solo puede tener un máximo de 119 caracteres")
+                        Alert(Title: "Error in text field", Message: "Failed to paste text. An external ID has a maximum of 119 characters.")
                     }
                     // Character count exceeded, disallow text change
                     return false
@@ -94,7 +94,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
                     // easy: pasted data has a length greater than 1; who copy/pastes one character?
                     if string.count > 1 {
                         // Pasting text, present alert so the user knows what went wrong
-                        Alert(Title: "Error en campo de texto", Message: "Ha fallado pegar texto. Un DNI solo puede tener un máximo de 9 caracteres")
+                        Alert(Title: "Error in text field", Message: "Failed to paste text. An DNI number has a maximum of 9 characters.")
                     }
                     // Character count exceeded, disallow text change
                     return false
@@ -115,7 +115,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
                     // Invalid characters detected, disallow text change
                 }
                 else {
-                    Alert(Title: "Error en identificador", Message: "Este campo sólo admite un número de 9 digitos")
+                    Alert(Title: "Error in identifier", Message: "Este campo sólo admite un número de 9 digitos")
                     return false
                 }
             }
@@ -130,7 +130,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
                     // easy: pasted data has a length greater than 1; who copy/pastes one character?
                     if string.count > 1 {
                         // Pasting text, present alert so the user knows what went wrong
-                        Alert(Title: "Error en campo de texto", Message: "Ha fallado pegar texto. Sólo pueden ser 9 digitos")
+                        Alert(Title: "Error in text field", Message: "Failed to paste text. Only 9 characters are allowed.")
                     }
                     // Character count exceeded, disallow text change
                     return false
@@ -146,23 +146,23 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
     /// Acción cuando se pulsa el botón checkDNIWallet
     @IBAction func checkDNIWalletButton(_ sender: UIButton) {
         if DNIWalletPlusIACClient().isAppInstalled() {
-            Alert(Title: "DNI Wallet+ está instalado", Message: "DNI Wallet+ está instalado en este iPhone")
+            Alert(Title: "DNI Wallet+ is installed", Message: "DNI Wallet+ is installed on this iPhone.")
         }
         else if DNIWalletBasicIACClient().isAppInstalled() {
-            Alert(Title: "DNI Wallet está instalado", Message: "DNI Wallet está instalado en este iPhone")
+            Alert(Title: "DNI Wallet is installed", Message: "DNI Wallet is installed on this iPhone.")
         }
         else {
-            Alert(Title: "DNI Wallet no está instalado", Message: "Este iPhone no tiene instalado DNI Wallet ni DNI Wallet+")
+            Alert(Title: "DNI Wallet is not installed", Message: "This iPhone does not have DNI Wallet or DNI Wallet+ installed")
         }
     }
     
     /// Función más simple que la anterior. DNIWalletIACClient se encarga primero verificar si existe DNI Wallet+ y si no existe, DNI Wallet
     @IBAction func checkDNIWalletButtonSimpler(_ sender: UIButton) {
         if DNIWalletIACClient().isAppInstalled() {
-            Alert(Title: "DNI Wallet está instalado", Message: "DNI Wallet está instalado en este iPhone")
+            Alert(Title: "DNI Wallet is installed", Message: "DNI Wallet is installed on this iPhone.")
         }
         else {
-            Alert(Title: "DNI Wallet no está instalado", Message: "Este iPhone no tiene instalado DNI Wallet ni DNI Wallet+")
+            Alert(Title: "DNI Wallet is not installed", Message: "This iPhone does not have DNI Wallet or DNI Wallet+ installed")
         }
     }
     
@@ -170,7 +170,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
     @IBAction func launchDNIWalletButton(_ sender: UIButton) {
         // Comprueba que hay conexión a Internet
         if !CheckInternet.Connection() {
-            Alert(Title: "No hay conexión", Message: "El iPhone no está conectado a Internet")
+            Alert(Title: "There is no internet connection", Message: "The iPhone is not connected to the Internet")
             return
         }
 
@@ -178,7 +178,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
         // Se puede cambiar la llamada a AskInstall por una pantalla mas descriptiva para ayudar a la instalación
         let client = DNIWalletIACClient()
         if !client.isAppInstalled() {
-            AskInstall(Title: "DNI Wallet no está instalado", Message: "DNI Wallet no está instalado en este iPhone")
+            AskInstall(Title: "DNI Wallet is not installed", Message: "This iPhone does not have DNI Wallet installed")
             return
         }
 
@@ -278,7 +278,7 @@ class CheckDNIWalletVC: UIViewController, UITextFieldDelegate, UIScrollViewDeleg
         toolbar.sizeToFit()
         // Add a flexible space item to push the "Done" button to the right
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "Aceptar", style: .plain, target: self, action: #selector(doneButtonTapped))
+        let doneButton = UIBarButtonItem(title: "Done".localized(), style: .plain, target: self, action: #selector(doneButtonTapped))
         toolbar.setItems([flexibleSpace, doneButton], animated: false)
         orgIDTextField.inputAccessoryView = toolbar
         procIDTextField.inputAccessoryView = toolbar
